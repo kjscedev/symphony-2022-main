@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/style.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!--PreLoader-->
+    <div id="preloader">
+        <h1>Loading...</h1>
+    </div>
+    <!--End PreLoader-->
+
+    <!--Header-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1>Symphony</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar">
+
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="Home">Home</a></li>
+                        <li><a href="./pages/events.html" data-after="Events">Events</a></li>
+                        <li><a href="#" data-after="ProShows">Pro-Shows</a></li>
+                        <li><a href="./pages/parvaah.html" data-after="Parvaah">Parvaah</a></li>
+                        <li><a href="./pages/syahi.html" data-after="Syahi">Syahi</a></li>
+                        <li><a href="./pages/shield.html" data-after="Shield">Shield</a></li>
+                        <li><a href="#" data-after="Sponsors">Sponsors</a></li>
+                        <li><a href="./pages/rules.html" data-after="Rules">Rules</a></li>
+                        <li><a href="./pages/reachus.html" data-after="Reachus">Reach Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Header-->
+
+    <!--Hero Section-->
+    <div class="canvas-container">
+        <canvas class="webgl"></canvas>
+    </div>
+    <!--End Hero Section-->
+
+    <script type="module" src="./index.js"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>
