@@ -814,9 +814,17 @@ table tr td{
     line-height: 1em;   
 }
 
-.card .content-ps p{
+.card .content-ps h3{
     color: #fff;
     font-family: "SourceSansProSemiBold";
+    font-size: 2rem;
+    line-height: 1em; 
+    padding: 3px 0px;  
+}
+
+.card .content-ps p{
+    color: #fff;
+    font-family: "SourceSansProSemiBoldItalic";
     font-size: 1.5rem;
     padding: 10px 0px;
 }
