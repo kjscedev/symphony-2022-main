@@ -17,6 +17,14 @@
       referrerpolicy="no-referrer"
     />
     <title>Document</title>
+    <style>
+      .year{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+
+    </style>
   </head>
   <body>
     <!--PreLoader-->
@@ -61,26 +69,70 @@
         <div>
           <h1 class="sponsors-head">Sponsors</h1>
           <div class="years">
-            <div class="year">2018</div>
-            <div class="year">2019</div>
-            <div class="year">2020</div>
-            <div class="year">2021</div>
+            <div class="year" id="2018" onclick="javascript:dissappearSponsors('s_2018','s_2019','s_2020','s_2021')">2018</div>
+            <div class="year" id="2019" onclick="javascript:dissappearSponsors('s_2019','s_2018','s_2020','s_2021')">2019</div>
+            <div class="year" id="2020" onclick="javascript:dissappearSponsors('s_2020','s_2018','s_2019','s_2021')">2020</div>
+            <div class="year" id="2021" onclick="javascript:dissappearSponsors('s_2021','s_2018','s_2019','s_2020')">2021</div>
           </div>
+         
         </div>
-        <div class="sponsors-logos">
-          <img src="../assets/facebook.png" />
+        <div>
+          <div class="sponsors-logos" id="s_2018">
+          <img src="../assets/insta.png" />
           <img src="../assets/facebook.png" />
           <img src="../assets/facebook.png" />
         </div>
+        <div class="sponsors-logos" id="s_2019">
+          <img src="../assets/twitter.png" />
+          <img src="../assets/facebook.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        <div class="sponsors-logos" id="s_2020">
+          <img src="../assets/facebook.png" />
+          <img src="../assets/insta.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        <div class="sponsors-logos" id="s_2021">
+          <img src="../assets/facebook.png" />
+          <img src="../assets/twitter.png" />
+          <img src="../assets/facebook.png" />
+        </div>
+        </div>
+        
       </div>
     </section>
 
     <script src="../js/app.js"></script>
     <script>
-      var loader = document.getElementById("preloader");
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
+      window.onload=function(){
+    var x = document.getElementById('s_2021');
+    var y=document.getElementById('s_2018');
+    var z=document.getElementById('s_2019');
+    var w=document.getElementById('s_2020');
+    x.style.display = 'block';
+    y.style.display='none';
+    z.style.display='none';
+    w.style.display='none';
+  }
+
+function dissappearSponsors(yr1,yr2,yr3,yr4) 
+{
+
+  var x = document.getElementById(yr1);
+  var y=document.getElementById(yr2);
+  var z=document.getElementById(yr3);
+  var w=document.getElementById(yr4);
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    y.style.display='none';
+    z.style.display='none';
+    w.style.display='none';
+  } else {
+    x.style.display = 'none';
+  }
+ 
+}
     </script>
+    
   </body>
 </html>

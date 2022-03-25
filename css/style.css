@@ -727,6 +727,7 @@ table tr td {
 .sponsors-logos {
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
