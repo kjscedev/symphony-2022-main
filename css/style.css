@@ -545,8 +545,33 @@ a{
     background-size: cover;
     border-radius: 15px 15px 0 0;
 }
-.car-1{
-    background-image: url('../assets/ecorun_2019.png');
+
+.pic-1{
+    background-image: url('../assets/parvaah/ecorun.png');
+}
+.pic-2{
+    background-image: url('../assets/parvaah/signal.png');
+}
+.pic-3{
+    background-image: url('../assets/parvaah/secret.png');
+}
+.pic-4{
+    background-image: url('../assets/parvaah/diwali19.png');
+}
+.pic-5{
+    background-image: url('../assets/parvaah/tree19.png');
+}
+.pic-6{
+    background-image: url('../assets/parvaah/know.png');
+}
+.pic-7{
+    background-image: url('../assets/parvaah/diwali20.png');
+}
+.pic-8{
+    background-image: url('../assets/parvaah/beaut.png');
+}
+.pic-9{
+    background-image: url('../assets/parvaah/mangroove.png');
 }
 /*End Parvaah Page Styling*/
 
@@ -925,6 +950,15 @@ table tr td{
 }
 
 @media only screen and (max-width: 768px){
+    .container{
+        align-items: flex-start;
+    }
+    .syahi-mob{
+        padding-top: 100px;
+    }
+    #services .section-title{
+        padding-left: 35px;
+    }
     .parvaah-desc p{
         font-size: 20px;
         padding: 50px 50px;
