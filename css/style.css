@@ -1013,7 +1013,9 @@ table tr td{
         padding: 20px 25px;
         width: 225px;
     }
-    
+    .cell-1{
+        display: none;
+    }
     .parvaah-container{
         padding-top: 70px;
     }
