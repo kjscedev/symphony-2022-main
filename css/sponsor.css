@@ -75,7 +75,7 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #ce4848;
+    background-color: #48bece;
     overflow-x: hidden;
 }
 
@@ -134,7 +134,7 @@ a{
     cursor: pointer;
     padding: 10px 20px;
     width: 33.33%;
-    background-color: #ff7070;
+    background-color: #70eeff;
     text-align: center;
     font-size: 2rem;
     font-family: "SourceSansProBold";
@@ -142,7 +142,7 @@ a{
 }
 
 .tab.active {
-    background: #b82413;
+    background: #1392b8;
 }
 
 .tab:hover {
