@@ -373,6 +373,9 @@ a{
     margin: 10px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 2px 24px 44px -9px rgba(247,120,120,0.51);
+-webkit-box-shadow: 2px 24px 44px -9px rgba(247,120,120,0.51);
+-moz-box-shadow: 2px 24px 44px -9px rgba(247,120,120,0.51);
 }
 .card-container .cards .imgBx 
 {
